@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Segura - Meu App Firebase</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; min-height: 90vh;}
+        .container { max-width: 600px; padding: 30px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;}
+        button { padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;}
+        button:hover { background-color: #c82333; }
+        .message { color: green; margin-top: 15px; } /* Mensagens de sucesso aqui */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à área VIP!</h1>
+        <p>Olá, <strong id="userEmailDisplay"></strong>! Você está logado com sucesso.</p>
+        <p>Este é um conteúdo exclusivo que só você, como usuário autenticado, pode ver.</p>
+        
+        <p id="message" class="message"></p>
+
+        <button id="logoutButton">Sair da Conta</button>
+    </div>
+
+    <!-- Inclua o SDK do Firebase E SEU SCRIPT DE AUTENTICAÇÃO -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+
+    <script>
+        // Lógica específica desta página para interagir com auth.js
+        document.getElementById('logoutButton').addEventListener('click', async () => {
+            await window.logoutUser();
+        });
+    </script>
+</body>
+</html>
+
