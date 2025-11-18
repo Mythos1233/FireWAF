@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+body{
+    text-decoration: none;
+    overflow-x:  hidden;
+    background: #0a0714;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body ul li{
+    padding: 10px;
+    list-style: none;
+    list-style-type: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #b47bff28;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0, 0.6);
+    width: 80%;
+    height: 5vh;
+    margin: 0 auto;
+    margin-top: 3vh;
+    border-radius: 30px 30px 30px 30px;
+    border: solid white 1px;
+}
+
+.imagem{
+    padding-inline: 30px;
+    width: 170px;
+    height: 50px;
+}
+
+.flex{
+    padding-inline: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+    #neonCanvas{
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+        position: fixed;
+    }
+
+    .section1{
+        width: 80%;
+        height: 55vh;
+        margin: 0 auto;
+        padding: 50px;
+        margin-top: 13vh;
+        justify-items: center;
+    }
+
+    .section1 h1{
+        font-size: 130px;
+    }
+
+    .section2{
+        width: 80%;
+        background-color: rgba(128, 128, 128, 0.279);
+        height: 100vh;
+        margin: 0 auto;
+        border: solid white 1px;
+        border-radius: 20px 20px 20px 20px;
+        padding: 50px;
+        margin-top: 5vh;
+    }
+
+    .section2 h1{
+        font-size: 70px;
+        margin-bottom: 5vh;
+    }
+
+    .section2 p{
+        text-align: justify;
+        font-size: 20px;
+    }

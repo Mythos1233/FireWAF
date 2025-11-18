@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Segura - Meu App Firebase</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; min-height: 90vh;}
-        .container { max-width: 600px; padding: 30px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;}
-        button { padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;}
-        button:hover { background-color: #c82333; }
-        .message { color: green; margin-top: 15px; } /* Mensagens de sucesso aqui */
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo à área VIP!</h1>
-        <p>Olá, <strong id="userEmailDisplay"></strong>! Você está logado com sucesso.</p>
-        <p>Este é um conteúdo exclusivo que só você, como usuário autenticado, pode ver.</p>
-        
-        <p id="message" class="message"></p>
 
-        <button id="logoutButton">Sair da Conta</button>
-    </div>
+    <canvas id="neonCanvas"></canvas>
+
+    <header class="header">
+        <img src="img/Logo.png" alt="logo" class="imagem">
+        <nav>
+            <ul class="flex">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="section1">
+            <h1>Segurança WAF</h1>
+            <p>Um site informativo sobre oque é e como funciona o WAF.</p>
+        </section>
+
+        <section class="section2">
+            <h1>TITULO COISA</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aperiam quo enim eveniet sequi libero qui doloribus corporis incidunt? Sequi temporibus est explicabo. Dolorum harum quo tempore, minus illo nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt facere temporibus obcaecati nulla facilis nihil tenetur sunt assumenda et at dolorum fugiat quaerat asperiores, corporis nesciunt fuga, non modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat recusandae dolorem commodi dolores vel incidunt vero. Laboriosam qui placeat quidem delectus in nobis ratione magnam, culpa nulla ducimus fugit ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus atque sed hic animi quas, facilis excepturi doloribus. Eos impedit architecto doloremque magnam a temporibus quod debitis. Consequatur minus impedit voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatem. A unde aperiam ducimus pariatur assumenda corrupti dolorum vitae ex laboriosam ullam non, hic sit nemo modi tenetur similique cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident saepe quod eveniet dolores porro sint quidem explicabo ullam officia neque, laudantium laborum, consectetur quae id sunt reprehenderit placeat odit.</p>
+        </section>
+    </main>
+    
 
     <!-- Inclua o SDK do Firebase E SEU SCRIPT DE AUTENTICAÇÃO -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="firebase.js"></script>
+    <script src="script.js"></script>
 
     <script>
         // Lógica específica desta página para interagir com auth.js
