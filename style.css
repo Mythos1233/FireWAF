@@ -33,7 +33,7 @@ body ul li{
     width: 80%;
     height: 5vh;
     margin: 0 auto;
-    margin-top: 3vh;
+    margin-top: 5vh;
     border-radius: 30px 30px 30px 30px;
     border: solid white 1px;
 }
@@ -59,10 +59,10 @@ body ul li{
 
     .section1{
         width: 80%;
-        height: 55vh;
+        height: 50vh;
         margin: 0 auto;
         padding: 50px;
-        margin-top: 13vh;
+        margin-top: 20vh;
         justify-items: center;
     }
 
