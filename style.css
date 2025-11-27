@@ -73,7 +73,7 @@ body ul li{
 }
 
 .section1 h1{
-    font-size: 130px;
+    font-size: 8em;
 }
 
 .section2{
@@ -93,7 +93,7 @@ body ul li{
 }
 
 .container h1{
-    font-size: 70px;
+    font-size: 3em;
     margin-bottom: 5vh;
 }
 
@@ -110,8 +110,8 @@ body ul li{
 }
 
 .container img{
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
 }
 
 .centralizada{
