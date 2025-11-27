@@ -4,6 +4,10 @@
     font-family: "Fira Sans Condensed", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     text-decoration: none;
     overflow-x:  hidden;
@@ -127,4 +131,8 @@ footer{
 
 footer p{
     margin-top: 3vh;
+}
+
+#inicio{
+    color: #0a071400;
 }
