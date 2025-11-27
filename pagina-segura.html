@@ -37,12 +37,22 @@
 
         <section class="section2">
             <div class="container">
-                <h1>TITULO COISA</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aperiam quo enim eveniet sequi libero qui doloribus corporis incidunt? Sequi temporibus est explicabo. Dolorum harum quo tempore, minus illo nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt facere temporibus obcaecati nulla facilis nihil tenetur sunt assumenda et at dolorum fugiat quaerat asperiores, corporis nesciunt fuga, non modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat recusandae dolorem commodi dolores vel incidunt vero. Laboriosam qui placeat quidem delectus in nobis ratione magnam, culpa nulla ducimus fugit ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus atque sed hic animi quas, facilis excepturi doloribus. Eos impedit architecto doloremque magnam a temporibus quod debitis. Consequatur minus impedit voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatem. A unde aperiam ducimus pariatur assumenda corrupti dolorum vitae ex laboriosam ullam non, hic sit nemo modi tenetur similique cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident saepe quod eveniet dolores porro sint quidem explicabo ullam officia neque, laudantium laborum, consectetur quae id sunt reprehenderit placeat odit.</p>
+                <h1>Função:</h1>
+                <p>WAF (ou Web Application Firewall) consiste em proteger aplicativos web ao monitorar e filtrar tráfegos HTTP/HTTPS entre o aplicativo web e a internet, protegendo contra ataques maliciosos. Um WAF protege ameaças como SQL Injection, Cross-Site Scripting, entre outros. O WAF não foi desenvolvido para proteger a aplicação de todo tipo de ataque, mas costuma fazer parte de um conjunto de ferramentas, criando uma defesa contra diversos vetores de ataque.</p>
             </div>
             <div class="container">
-                <h1>TIULO 2</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente impedit vel fugit sequi? Optio quam, nihil unde ut fuga tempora maiores at ipsa quaerat tempore magnam quos, asperiores deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, beatae culpa velit aliquam quisquam laudantium ducimus nam, aliquid temporibus enim nisi officia ab illum, eligendi fugiat esse unde dolore odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat numquam excepturi cumque placeat error reiciendis nesciunt debitis quia blanditiis vitae nobis suscipit culpa corrupti molestiae, expedita, nostrum optio reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nostrum quas sunt eveniet nobis iste excepturi non laborum, qui provident atque dolor! Culpa incidunt ratione saepe similique reiciendis alias vero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos unde veritatis temporibus porro voluptate est deserunt enim perspiciatis, saepe vitae error voluptas expedita dolor nam illo omnis odio iure quia.</p>
+                <h1>Diferença entre lista de permissões e lista de bloqueios:</h1>
+                <p>Um WAF implantado com lista de bloqueio (modelo de segurança negativo) protege contra ataques conhecidos. Ou seja, ele impede ataques que foram bloqueados na sua configuração. Já a lista de permissões (modelo de segurança positivo) só admite o tráfego que foi pré-aprovado. Então ele só permite o acesso de tráfego que foi configurado a ter essa permissão. Basicamente, um protege de ataques conhecidos, e o outro só libera o tráfego que foi previamente permitido. Os dois têm seus prós e contras, por isso, muitos WAF’s oferecem um modelo híbrido, que usa os dois tipos de listas.</p>
+                <img class="centralizada" src="img/waf.jpeg" alt="waf">
+            </div>
+            <div class="container">
+                <h1>O que é WafW00f?</h1>
+                <p>O WafW00f é uma ferramenta de segurança de código aberto para detectar e identificar que tipo de WAF um site específico está usando. Normalmente é usada por profissionais em cybersegurança a descobrir qual tipo de solução de segurança está ativa. É uma ferramenta comum nas ferramentas do Kali Linux, utilizada por testadores de penetração (ou pentesters) para entender como funciona a segurança de um site.</p>
+            </div>
+            <div class="container">
+                <h1>Como usar?</h1>
+                <p>A ferramenta normalmente já vem instalada se você estiver usando o Kali Linux, mas caso não esteja, basta fazer a instalação. O uso básico da ferramenta funciona apenas usando o comando “wafw00f” e a URL do site que deseja conferir, por exemplo: “wafw00f https://www.google.com”. Com isso, será enviadas requisições HTTP para o URL e, caso haja, determinar o WAF e o fornecedor do site.</p>
+                <img class="centralizada" src="img/wafwoof.jpeg" alt="wafwoof">
             </div>
         </section>
     </main>
